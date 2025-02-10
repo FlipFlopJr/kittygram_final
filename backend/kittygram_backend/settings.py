@@ -54,6 +54,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'kittygram_backend.wsgi.application'
 
 
+<<<<<<< HEAD
 # DATABASES = {
 #     'default': {
 #         # Меняем настройку Django: теперь для работы будет использоваться
@@ -77,6 +78,12 @@ DATABASES = {
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', ''),
         'HOST': os.getenv('DB_HOST', ''),
         'PORT': os.getenv('DB_PORT', 5432)
+=======
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+>>>>>>> c22426cdec8109b49b28bacaec9896135ed1ee7d
     }
 }
 
@@ -111,7 +118,10 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
 STATIC_ROOT = BASE_DIR / 'collected_static'
+=======
+>>>>>>> c22426cdec8109b49b28bacaec9896135ed1ee7d
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
