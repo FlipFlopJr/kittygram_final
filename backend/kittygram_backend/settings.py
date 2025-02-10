@@ -8,7 +8,7 @@ SECRET_KEY = 'django-insecure-cg6*%6d51ef8f#4!r3*$vmxm4)abgjw8mo!4y-q*uq1!4$-89$
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -54,7 +54,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'kittygram_backend.wsgi.application'
 
 
-<<<<<<< HEAD
 # DATABASES = {
 #     'default': {
 #         # Меняем настройку Django: теперь для работы будет использоваться
@@ -78,15 +77,8 @@ DATABASES = {
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', ''),
         'HOST': os.getenv('DB_HOST', ''),
         'PORT': os.getenv('DB_PORT', 5432)
-=======
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
->>>>>>> c22426cdec8109b49b28bacaec9896135ed1ee7d
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -118,10 +110,8 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-<<<<<<< HEAD
 STATIC_ROOT = BASE_DIR / 'collected_static'
-=======
->>>>>>> c22426cdec8109b49b28bacaec9896135ed1ee7d
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -130,7 +120,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated', 
+        'rest_framework.permissions.IsAuthenticated',
     ],
 
     'DEFAULT_AUTHENTICATION_CLASSES': [
