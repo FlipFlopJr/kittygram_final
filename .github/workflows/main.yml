@@ -142,5 +142,4 @@ jobs:
         with:
           context: ./nginx/
           push: true
-
-          tags: flipflop/kittygram_gateway:latest
+          tags: flipflopjr/kittygram_gateway:latest
